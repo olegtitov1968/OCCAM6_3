@@ -1,0 +1,20 @@
+      INTEGER*4  NSTATIONS         ! the maximum number of stations for session
+      INTEGER*4  NSOURCES          ! the maximum number of sources for session
+      INTEGER*4  NBASES            ! the maximum number of bases for session
+      INTEGER*4  NTIMMAX           ! the maximum number of observ. for base
+      INTEGER*4  NSCANS            ! the maximum number of scans for one source
+      INTEGER*4  NSTAT             ! the maximum number of observ. for station
+      INTEGER*4  NOCLOTDS          ! the number of tides for ocean loading model
+      INTEGER*4  NOBSERV           ! the maximum number of observ. for session
+      INTEGER*4  NPARAMS           ! the maximum number of estimated parameters
+
+      PARAMETER ( NSTATIONS = 20 )
+      PARAMETER ( NSOURCES = 400 ) !  Update on 05.08.2014
+      PARAMETER ( NBASES = NSTATIONS*(NSTATIONS-1)/2 )
+      PARAMETER ( NTIMMAX = 3000 )
+      PARAMETER ( NSCANS = 4000 )
+      PARAMETER ( NSTAT = 12000 )
+      PARAMETER ( NOCLOTDS = 11 )
+      PARAMETER ( NOBSERV = 40000 )
+      PARAMETER ( NPARAMS = (NSTATIONS-1)*8+3+5 )
+
