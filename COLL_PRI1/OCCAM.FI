@@ -1,0 +1,35 @@
+      INTEGER*4  NMAX         ! the maximum number of stations for session
+      INTEGER*4  NPAR         ! the maximum number of local parameters
+      INTEGER*4  NSOU         ! the maximum number of sources for session
+      INTEGER*4  NOBSERV      ! the maximum number of observ. for session
+      INTEGER*4  NOBS1        ! the maximum number of adjusted observ. for session
+      INTEGER*4  NBASES       ! the maximum number of bases for session
+      INTEGER*4  NTIMMAX      ! the maximum number of observ. for base
+      INTEGER*4  NSS          ! The number of radiosources in icrf catalogue
+      INTEGER*4  NS           ! The number of parameters per station !  18.08.2004
+      INTEGER*4  N14          ! The number of extra global parameters ! 18.03.2008
+
+      PARAMETER ( NMAX = 20 )
+      PARAMETER ( NPAR = 700 ) ! Due to arc sources on 4-Jan-2014; update 10.11.2014
+
+
+      PARAMETER ( NSOU = 400 ) ! increased on 30.10.2014
+
+      PARAMETER ( NOBSERV = 40000 )
+
+      PARAMETER ( NOBS1 = 18500 )            ! Increased on 16.01.2017
+
+      PARAMETER ( NBASES = NMAX*(NMAX-1)/2 )
+      PARAMETER ( NTIMMAX = 3000 )
+
+      parameter (NSS = 8720) !  09.07.2024  8720
+
+      parameter ( NTRF   =  133)     !   26.06.2006
+      PARAMETER ( NS = 9         )
+
+
+      parameter (n_unstable = 7970)     !   31.05.2019
+
+      parameter ( n_stable=1600)     !   30.08.2010
+
+      parameter ( n14=18)     !   16.11.2023    (3+3+10+1 + 1) parallax added!  
