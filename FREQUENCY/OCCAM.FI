@@ -1,0 +1,27 @@
+      INTEGER*4  NMAX         ! the maximum number of stations for session
+      INTEGER*4  NPAR         ! the maximum number of local parameters
+      INTEGER*4  NSOU         ! the maximum number of sources for session
+      INTEGER*4  NOBSERV      ! the maximum number of observ. for session
+      INTEGER*4  NOBS1        ! the maximum number of adjusted observ. for session
+      INTEGER*4  NBASES       ! the maximum number of bases for session
+      INTEGER*4  NTIMMAX      ! the maximum number of observ. for base
+      INTEGER*4  NSS          ! The number of radiosources in icrf catalogue
+      INTEGER*4  NS           ! The number of parameters per station !  18.08.2004
+
+      PARAMETER ( NMAX = 20 )
+      PARAMETER ( NPAR = 800 )    !   Due to arc sources; update on 05.08.2014
+      PARAMETER ( NSOU = 400 )    !   update on 20.08.2007 then on 05.08.2014
+      PARAMETER ( NOBSERV = 32000 )
+      PARAMETER ( NOBS1 =  20000 )            
+      PARAMETER ( NBASES = NMAX*(NMAX-1)/2 )
+      PARAMETER ( NTIMMAX = 3000 )           ! the same number as in DTAU !!!  
+
+      parameter ( NSS   =  7970)      !   19.04.2017
+
+      PARAMETER ( NS = 7 )    !  22.11.2019 - for delay rate
+
+
+
+      parameter ( n_unstable=7667)   !   12.02.2014
+
+      parameter ( n_stable=1600)     !   17.09.2010
